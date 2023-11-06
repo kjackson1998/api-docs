@@ -373,7 +373,7 @@
                 "type": "object",
                 "properties": {
                     "symbol": {
-                        "$ref": "#/components/schemas/FactionSymbols",
+                        "$ref": "#/components/schemas/FactionSymbol",
                         "description": "Faction symbol."
                     },
                     "name": {
@@ -412,7 +412,7 @@
                     "isRecruiting"
                 ]
             },
-            "FactionSymbols": {
+            "FactionSymbol": {
                 "type": "string",
                 "description": "The symbol of the faction.",
                 "minLength": 1,
@@ -1941,7 +1941,7 @@
                 "type": "object",
                 "properties": {
                     "symbol": {
-                        "$ref": "#/components/schemas/FactionSymbols"
+                        "$ref": "#/components/schemas/FactionSymbol"
                     }
                 },
                 "required": [
@@ -2225,7 +2225,7 @@
                 "description": "The faction that controls the waypoint.",
                 "properties": {
                     "symbol": {
-                        "$ref": "#/components/schemas/FactionSymbols"
+                        "$ref": "#/components/schemas/FactionSymbol"
                     }
                 },
                 "required": [
@@ -2593,7 +2593,7 @@
                             "schema": {
                                 "properties": {
                                     "faction": {
-                                        "$ref": "#/components/schemas/FactionSymbols",
+                                        "$ref": "#/components/schemas/FactionSymbol",
                                         "example": "COSMIC"
                                     },
                                     "symbol": {
